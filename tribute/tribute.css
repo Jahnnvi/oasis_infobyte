@@ -1,0 +1,41 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D4E8F4;
+    color: #1B597B;
+	
+}
+
+header {
+    background-color: #1B597B;
+    color: #A7C8EF;
+    text-align: center;
+    padding: 1em;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admired-person {
+    text-align: center;
+}
+
+.admired-person img {
+    max-width: 200px;
+	max-height:400px;
+    border-radius: 50%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1B597B;
+    color: #A7C8EF;
+}

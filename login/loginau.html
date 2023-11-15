@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login Authentication</title>
+    <link rel="stylesheet" href="loginau.css">
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2><u>Login</u></h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Register</a></p>
+    </div>
+
+    <div class="container" id="registerContainer" style="display: none;">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" required>
+
+            <button type="button" onclick="register()">Register</button>
+        </form>
+
+        <p>Already have an account? <a href="javascript:void(0);" onclick="toggleForm()">Login</a></p>
+    </div>
+
+    <div id="securedPage" style="display: none;">
+        <h2>Secured Page</h2>
+        <p>Welcome! You have successfully logged in.</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="loginau.js"></script>
+</body>
+
+</html>
